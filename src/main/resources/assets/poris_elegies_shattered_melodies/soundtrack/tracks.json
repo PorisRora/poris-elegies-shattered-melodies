@@ -1,0 +1,398 @@
+{
+  "_说明": "曲目清单。pools 是各环境候选曲；weights 是每个环境的初始选曲权重，未写默认为 1，当地主题通常为 3。全局最近播放记录会进一步避开上一首、降低近三首概率。创造模式主世界优先使用所在群系事件，普通地区使用 creative 池。poris_elegies_shattered_melodies:underground 是本模组新增的地下场景（主世界头顶到地表至少 12 格、天光为 0，繁茂洞穴、溶洞、深暗之域除外）。空池保持安静。只改曲池时运行 tools/build-soundtrack.py --definitions-only；加曲时用 --import-ost。",
+  "tracks": {
+    "01_witchsrequiem": {
+      "title_ja": "魔女の鎮魂歌",
+      "title_zh": "魔女的安魂曲",
+      "energy": "walk"
+    },
+    "01b_herfootprints": {
+      "title_ja": "彼女の足あと",
+      "title_zh": "她的足迹",
+      "energy": "walk"
+    },
+    "02_starchartwanderer": {
+      "title_ja": "星図をたどる散歩道",
+      "title_zh": "星图上的散步道",
+      "energy": "still"
+    },
+    "02b_silverafternoon": {
+      "title_ja": "銀色の午後",
+      "title_zh": "银色的午后",
+      "energy": "still"
+    },
+    "02c_usualroad": {
+      "title_ja": "いつもの道",
+      "title_zh": "熟悉的路",
+      "energy": "walk"
+    },
+    "03_blankpagearchitect": {
+      "title_ja": "白紙の頁に城を建てる",
+      "title_zh": "在空白书页上建一座城",
+      "energy": "walk"
+    },
+    "04_gardenlabyrinth": {
+      "title_ja": "庭園迷宮の小径",
+      "title_zh": "庭园迷宫的小径",
+      "energy": "still"
+    },
+    "05_rosegardenwaltz": {
+      "title_ja": "薔薇園のワルツ",
+      "title_zh": "玫瑰园的圆舞曲",
+      "energy": "still"
+    },
+    "06_forestcathedral": {
+      "title_ja": "森の大聖堂",
+      "title_zh": "林中的大教堂",
+      "energy": "still"
+    },
+    "07_ivyruins": {
+      "title_ja": "蔦の下に眠る遺跡",
+      "title_zh": "藤蔓下沉睡的遗迹",
+      "energy": "walk"
+    },
+    "08_sunlitterrace": {
+      "title_ja": "陽だまりのテラス",
+      "title_zh": "阳光露台",
+      "energy": "walk"
+    },
+    "09_bambooteahouse": {
+      "title_ja": "竹林の奥の茶室",
+      "title_zh": "竹林深处的茶室",
+      "energy": "still"
+    },
+    "10_marshteaparty": {
+      "title_ja": "沼の魔女のお茶会",
+      "title_zh": "沼泽魔女的茶会",
+      "energy": "still"
+    },
+    "11_mountainwindletter": {
+      "title_ja": "山風が君に便りを運ぶ",
+      "title_zh": "山风替我向你问好",
+      "energy": "walk"
+    },
+    "12_beforethepetalsfall": {
+      "title_ja": "散りゆく前に",
+      "title_zh": "在花落之前",
+      "energy": "still"
+    },
+    "13_sandtemple": {
+      "title_ja": "砂の神殿",
+      "title_zh": "沙中的神殿",
+      "energy": "walk"
+    },
+    "14_rustcliff": {
+      "title_ja": "錆色の断崖",
+      "title_zh": "锈色的断崖",
+      "energy": "walk"
+    },
+    "15_snowcloister": {
+      "title_ja": "回廊に雪が舞う",
+      "title_zh": "雪在回廊起舞",
+      "energy": "still"
+    },
+    "16_beyondtheblizzard": {
+      "title_ja": "吹雪の向こうに家がある",
+      "title_zh": "风雪之后还有人家",
+      "energy": "walk"
+    },
+    "17_frozenstarchapel": {
+      "title_ja": "凍てつく星の礼拝堂",
+      "title_zh": "冰封的星之礼拜堂",
+      "energy": "still"
+    },
+    "18_summitoath": {
+      "title_ja": "峰々の上で誓う",
+      "title_zh": "在群峰之上起誓",
+      "energy": "full"
+    },
+    "19_skywardstairs": {
+      "title_ja": "天へ続く石段",
+      "title_zh": "通往天空的石阶",
+      "energy": "walk"
+    },
+    "20_hiddenconservatory": {
+      "title_ja": "地下の温室",
+      "title_zh": "地下温室",
+      "energy": "still"
+    },
+    "21_dripclocktower": {
+      "title_ja": "雫の時計塔",
+      "title_zh": "滴水的钟楼",
+      "energy": "walk"
+    },
+    "22_silentcity": {
+      "title_ja": "静寂の古代都市",
+      "title_zh": "寂静的古城",
+      "energy": "still"
+    },
+    "23_drownedballroom": {
+      "title_ja": "海に沈んだ舞踏室",
+      "title_zh": "沉没的舞厅",
+      "energy": "still"
+    },
+    "24_hellfireelegy": {
+      "title_ja": "業火の挽歌",
+      "title_zh": "业火挽歌",
+      "energy": "full"
+    },
+    "24b_witchswithering": {
+      "title_ja": "魔女の凋零",
+      "title_zh": "魔女的凋零",
+      "energy": "full"
+    },
+    "25_crimsonbanquet": {
+      "title_ja": "緋色の晩餐会",
+      "title_zh": "绯红的晚宴",
+      "energy": "full"
+    },
+    "26_soulrequiem": {
+      "title_ja": "亡魂のレクイエム",
+      "title_zh": "亡魂的安魂曲",
+      "energy": "still"
+    },
+    "27_basaltinquisition": {
+      "title_ja": "黒岩の審問廷",
+      "title_zh": "黑岩审判庭",
+      "energy": "full"
+    },
+    "28_starseaendgame": {
+      "title_ja": "星の海の果ての盤面",
+      "title_zh": "星海尽头的棋盘",
+      "energy": "walk"
+    },
+    "29_bornoftheend": {
+      "title_ja": "Born of the End",
+      "title_zh": "生于终焉",
+      "energy": "full"
+    },
+    "30_candlecourage": {
+      "title_ja": "蝋燭一本分の勇気",
+      "title_zh": "一支蜡烛的勇气",
+      "energy": "walk"
+    },
+    "30b_untilthetorches": {
+      "title_ja": "松明が尽きるまで",
+      "title_zh": "直到火把燃尽",
+      "energy": "still"
+    },
+    "30c_waybackisfar": {
+      "title_ja": "帰り道はまだ遠い",
+      "title_zh": "回去的路还很远",
+      "energy": "still"
+    }
+  },
+  "pools": {
+    "minecraft:music.menu": [
+      "01_witchsrequiem",
+      "01b_herfootprints"
+    ],
+    "minecraft:music.game": [
+      "02_starchartwanderer",
+      "02b_silverafternoon",
+      "02c_usualroad",
+      "11_mountainwindletter"
+    ],
+    "minecraft:music.creative": [
+      "03_blankpagearchitect",
+      "02_starchartwanderer",
+      "02b_silverafternoon",
+      "02c_usualroad",
+      "11_mountainwindletter"
+    ],
+    "minecraft:music.overworld.forest": [
+      "04_gardenlabyrinth",
+      "06_forestcathedral",
+      "02_starchartwanderer"
+    ],
+    "minecraft:music.overworld.flower_forest": [
+      "05_rosegardenwaltz",
+      "12_beforethepetalsfall",
+      "02b_silverafternoon"
+    ],
+    "minecraft:music.overworld.old_growth_taiga": [
+      "06_forestcathedral",
+      "04_gardenlabyrinth",
+      "02_starchartwanderer"
+    ],
+    "minecraft:music.overworld.jungle": [
+      "07_ivyruins",
+      "08_sunlitterrace",
+      "09_bambooteahouse"
+    ],
+    "minecraft:music.overworld.sparse_jungle": [
+      "08_sunlitterrace",
+      "07_ivyruins",
+      "09_bambooteahouse"
+    ],
+    "minecraft:music.overworld.bamboo_jungle": [
+      "09_bambooteahouse",
+      "07_ivyruins",
+      "08_sunlitterrace"
+    ],
+    "minecraft:music.overworld.swamp": [
+      "10_marshteaparty",
+      "06_forestcathedral"
+    ],
+    "minecraft:music.overworld.meadow": [
+      "11_mountainwindletter",
+      "02_starchartwanderer",
+      "02b_silverafternoon"
+    ],
+    "minecraft:music.overworld.cherry_grove": [
+      "12_beforethepetalsfall",
+      "05_rosegardenwaltz",
+      "02b_silverafternoon"
+    ],
+    "minecraft:music.overworld.desert": [
+      "13_sandtemple",
+      "14_rustcliff"
+    ],
+    "minecraft:music.overworld.badlands": [
+      "14_rustcliff",
+      "13_sandtemple"
+    ],
+    "minecraft:music.overworld.grove": [
+      "15_snowcloister",
+      "16_beyondtheblizzard",
+      "17_frozenstarchapel"
+    ],
+    "minecraft:music.overworld.snowy_slopes": [
+      "16_beyondtheblizzard",
+      "15_snowcloister",
+      "17_frozenstarchapel"
+    ],
+    "minecraft:music.overworld.frozen_peaks": [
+      "17_frozenstarchapel",
+      "15_snowcloister",
+      "16_beyondtheblizzard"
+    ],
+    "minecraft:music.overworld.jagged_peaks": [
+      "18_summitoath",
+      "19_skywardstairs",
+      "11_mountainwindletter"
+    ],
+    "minecraft:music.overworld.stony_peaks": [
+      "19_skywardstairs",
+      "11_mountainwindletter"
+    ],
+    "minecraft:music.overworld.lush_caves": [
+      "20_hiddenconservatory",
+      "21_dripclocktower"
+    ],
+    "minecraft:music.overworld.dripstone_caves": [
+      "21_dripclocktower",
+      "20_hiddenconservatory"
+    ],
+    "minecraft:music.overworld.deep_dark": [
+      "22_silentcity"
+    ],
+    "minecraft:music.under_water": [
+      "23_drownedballroom"
+    ],
+    "minecraft:music.nether.nether_wastes": [
+      "24_hellfireelegy",
+      "24b_witchswithering"
+    ],
+    "minecraft:music.nether.crimson_forest": [
+      "25_crimsonbanquet"
+    ],
+    "minecraft:music.nether.soul_sand_valley": [
+      "26_soulrequiem"
+    ],
+    "minecraft:music.nether.basalt_deltas": [
+      "27_basaltinquisition"
+    ],
+    "minecraft:music.nether.warped_forest": [],
+    "minecraft:music.end": [
+      "28_starseaendgame"
+    ],
+    "minecraft:music.dragon": [
+      "29_bornoftheend"
+    ],
+    "minecraft:music.credits": [],
+    "poris_elegies_shattered_melodies:underground": [
+      "30_candlecourage",
+      "30b_untilthetorches",
+      "30c_waybackisfar"
+    ]
+  },
+  "fallback": [
+    "02_starchartwanderer",
+    "02b_silverafternoon",
+    "02c_usualroad",
+    "11_mountainwindletter"
+  ],
+  "weights": {
+    "minecraft:music.game": {
+      "02_starchartwanderer": 3,
+      "02b_silverafternoon": 3,
+      "02c_usualroad": 3
+    },
+    "minecraft:music.creative": {
+      "03_blankpagearchitect": 3,
+      "02_starchartwanderer": 2,
+      "02b_silverafternoon": 2,
+      "02c_usualroad": 2
+    },
+    "minecraft:music.overworld.forest": {
+      "04_gardenlabyrinth": 3
+    },
+    "minecraft:music.overworld.old_growth_taiga": {
+      "06_forestcathedral": 3
+    },
+    "minecraft:music.overworld.flower_forest": {
+      "05_rosegardenwaltz": 3
+    },
+    "minecraft:music.overworld.cherry_grove": {
+      "12_beforethepetalsfall": 3
+    },
+    "minecraft:music.overworld.jungle": {
+      "07_ivyruins": 3
+    },
+    "minecraft:music.overworld.sparse_jungle": {
+      "08_sunlitterrace": 3
+    },
+    "minecraft:music.overworld.bamboo_jungle": {
+      "09_bambooteahouse": 3
+    },
+    "minecraft:music.overworld.swamp": {
+      "10_marshteaparty": 3
+    },
+    "minecraft:music.overworld.meadow": {
+      "11_mountainwindletter": 3
+    },
+    "minecraft:music.overworld.desert": {
+      "13_sandtemple": 3
+    },
+    "minecraft:music.overworld.badlands": {
+      "14_rustcliff": 3
+    },
+    "minecraft:music.overworld.grove": {
+      "15_snowcloister": 3
+    },
+    "minecraft:music.overworld.snowy_slopes": {
+      "16_beyondtheblizzard": 3
+    },
+    "minecraft:music.overworld.frozen_peaks": {
+      "17_frozenstarchapel": 3
+    },
+    "minecraft:music.overworld.jagged_peaks": {
+      "18_summitoath": 3
+    },
+    "minecraft:music.overworld.stony_peaks": {
+      "19_skywardstairs": 3
+    },
+    "minecraft:music.overworld.lush_caves": {
+      "20_hiddenconservatory": 3
+    },
+    "minecraft:music.overworld.dripstone_caves": {
+      "21_dripclocktower": 3
+    },
+    "fallback": {
+      "02_starchartwanderer": 3,
+      "02b_silverafternoon": 3,
+      "02c_usualroad": 3
+    }
+  }
+}

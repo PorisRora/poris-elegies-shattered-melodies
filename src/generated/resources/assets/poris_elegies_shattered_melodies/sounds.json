@@ -1,0 +1,290 @@
+{
+  "music.01_witchsrequiem": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/01_witchsrequiem",
+        "stream": true
+      }
+    ]
+  },
+  "music.01b_herfootprints": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/01b_herfootprints",
+        "stream": true
+      }
+    ]
+  },
+  "music.02_starchartwanderer": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/02_starchartwanderer",
+        "stream": true
+      }
+    ]
+  },
+  "music.02b_silverafternoon": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/02b_silverafternoon",
+        "stream": true
+      }
+    ]
+  },
+  "music.02c_usualroad": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/02c_usualroad",
+        "stream": true
+      }
+    ]
+  },
+  "music.03_blankpagearchitect": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/03_blankpagearchitect",
+        "stream": true
+      }
+    ]
+  },
+  "music.04_gardenlabyrinth": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/04_gardenlabyrinth",
+        "stream": true
+      }
+    ]
+  },
+  "music.05_rosegardenwaltz": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/05_rosegardenwaltz",
+        "stream": true
+      }
+    ]
+  },
+  "music.06_forestcathedral": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/06_forestcathedral",
+        "stream": true
+      }
+    ]
+  },
+  "music.07_ivyruins": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/07_ivyruins",
+        "stream": true
+      }
+    ]
+  },
+  "music.08_sunlitterrace": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/08_sunlitterrace",
+        "stream": true
+      }
+    ]
+  },
+  "music.09_bambooteahouse": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/09_bambooteahouse",
+        "stream": true
+      }
+    ]
+  },
+  "music.10_marshteaparty": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/10_marshteaparty",
+        "stream": true
+      }
+    ]
+  },
+  "music.11_mountainwindletter": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/11_mountainwindletter",
+        "stream": true
+      }
+    ]
+  },
+  "music.12_beforethepetalsfall": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/12_beforethepetalsfall",
+        "stream": true
+      }
+    ]
+  },
+  "music.13_sandtemple": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/13_sandtemple",
+        "stream": true
+      }
+    ]
+  },
+  "music.14_rustcliff": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/14_rustcliff",
+        "stream": true
+      }
+    ]
+  },
+  "music.15_snowcloister": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/15_snowcloister",
+        "stream": true
+      }
+    ]
+  },
+  "music.16_beyondtheblizzard": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/16_beyondtheblizzard",
+        "stream": true
+      }
+    ]
+  },
+  "music.17_frozenstarchapel": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/17_frozenstarchapel",
+        "stream": true
+      }
+    ]
+  },
+  "music.18_summitoath": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/18_summitoath",
+        "stream": true
+      }
+    ]
+  },
+  "music.19_skywardstairs": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/19_skywardstairs",
+        "stream": true
+      }
+    ]
+  },
+  "music.20_hiddenconservatory": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/20_hiddenconservatory",
+        "stream": true
+      }
+    ]
+  },
+  "music.21_dripclocktower": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/21_dripclocktower",
+        "stream": true
+      }
+    ]
+  },
+  "music.22_silentcity": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/22_silentcity",
+        "stream": true
+      }
+    ]
+  },
+  "music.23_drownedballroom": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/23_drownedballroom",
+        "stream": true
+      }
+    ]
+  },
+  "music.24_hellfireelegy": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/24_hellfireelegy",
+        "stream": true
+      }
+    ]
+  },
+  "music.24b_witchswithering": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/24b_witchswithering",
+        "stream": true
+      }
+    ]
+  },
+  "music.25_crimsonbanquet": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/25_crimsonbanquet",
+        "stream": true
+      }
+    ]
+  },
+  "music.26_soulrequiem": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/26_soulrequiem",
+        "stream": true
+      }
+    ]
+  },
+  "music.27_basaltinquisition": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/27_basaltinquisition",
+        "stream": true
+      }
+    ]
+  },
+  "music.28_starseaendgame": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/28_starseaendgame",
+        "stream": true
+      }
+    ]
+  },
+  "music.29_bornoftheend": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/29_bornoftheend",
+        "stream": true
+      }
+    ]
+  },
+  "music.30_candlecourage": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/30_candlecourage",
+        "stream": true
+      }
+    ]
+  },
+  "music.30b_untilthetorches": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/30b_untilthetorches",
+        "stream": true
+      }
+    ]
+  },
+  "music.30c_waybackisfar": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/30c_waybackisfar",
+        "stream": true
+      }
+    ]
+  }
+}

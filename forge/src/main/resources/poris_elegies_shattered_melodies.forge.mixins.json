@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.poris.soundtrack.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "poris_elegies_shattered_melodies.refmap.json",
+  "client": ["SoundEngineAccessor", "MusicManagerMixin"],
+  "injectors": {"defaultRequire": 1}
+}

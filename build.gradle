@@ -1,0 +1,73 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+
+// Client-side music mod for Minecraft 1.21 and 1.21.1.
+def soundtrackVersion = '0.1-beta'
+group = 'com.poris'
+version = soundtrackVersion
+base { archivesName = 'poris-elegies-shattered-melodies-neoforge-1.21-1.21.1' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(21) }
+
+repositories { mavenCentral() }
+
+
+// Game-ready audio and shared source files are included in the repository.
+sourceSets.main.resources.srcDir 'src/generated/resources'
+sourceSets.main.java.srcDir 'src/common/java'
+// Keep NeoForm's temporary patch files outside the cloud-synced project folder, to keep temporary build files local.
+def workspaceKey = projectDir.absolutePath.digest('SHA-256').take(16)
+def neoFormWorkDirectory = new File(gradle.gradleUserHomeDir,
+        "caches/poris-elegies/${workspaceKey}/neoform-work")
+tasks.withType(net.neoforged.nfrtgradle.NeoFormRuntimeTask).configureEach {
+    getWorkDirectory().set(neoFormWorkDirectory)
+}
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run/client')
+        }
+    }
+
+    mods {
+        poris_elegies_shattered_melodies {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+var generateModMetadata = tasks.register('generateModMetadata', ProcessResources) {
+    var replaceProperties = [
+            minecraft_version_range: '[1.21,1.21.1]',
+            // Keep the supported baseline independent of the workspace's newer build toolchain.
+            neo_version_range      : '[21.0.143,21.2)',
+            loader_version_range   : loader_version_range,
+            mod_version            : soundtrackVersion,
+    ]
+    inputs.properties replaceProperties
+    filteringCharset = 'UTF-8'
+    expand replaceProperties
+    from 'src/main/templates'
+    into layout.buildDirectory.dir('generated/sources/modMetadata')
+}
+
+sourceSets.main.resources.srcDir generateModMetadata
+neoForge.ideSyncTask generateModMetadata
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(ProcessResources).configureEach {
+    filteringCharset = 'UTF-8'
+}
+
+tasks.named('processResources', ProcessResources) {
+    exclude 'PORIS_ELEGIES_SHATTERED_MELODIES_SOURCES.json'
+    from('LICENSE', 'ASSET_LICENSE.md', 'MUSIC_LICENSE.md', 'MUSIC_CREDITS.md')
+}

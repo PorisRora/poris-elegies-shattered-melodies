@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT (code); All Rights Reserved (assets); see ASSET_LICENSE.md"
+issueTrackerURL="https://github.com/PorisRora/poris-elegies-shattered-melodies/issues"
+
+[[mixins]]
+config="poris_elegies_shattered_melodies.mixins.json"
+
+[[mods]]
+modId="poris_elegies_shattered_melodies"
+version="${mod_version}"
+displayName="Poris Elegies: Shattered Melodies"
+displayURL="https://github.com/PorisRora/poris-elegies-shattered-melodies"
+logoFile="assets/poris_elegies_shattered_melodies/textures/gui/mod_icon.png"
+description='''
+《珀璃丝追忆录：碎镜余音》：随旅途中的环境变化播放背景音乐。只需要装在客户端。
+Poris Elegies: Shattered Melodies. Background music that follows the environments along your journey. Client-side only.
+'''
+
+[[dependencies.poris_elegies_shattered_melodies]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.poris_elegies_shattered_melodies]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="CLIENT"

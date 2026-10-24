@@ -1,0 +1,77 @@
+package com.poris.soundtrack;
+
+import java.util.List;
+import net.minecraftforge.common.ForgeConfigSpec;
+
+/** Client settings, editable from the mod list's config screen. */
+public final class SoundtrackConfig {
+    public static final ForgeConfigSpec SPEC;
+    static final ForgeConfigSpec.BooleanValue MENU_MUSIC;
+    static final ForgeConfigSpec.BooleanValue IN_GAME_MUSIC;
+    static final ForgeConfigSpec.EnumValue<Frequency> FREQUENCY;
+    static final ForgeConfigSpec.EnumValue<ConflictMode> CONFLICT_MODE;
+    static final ForgeConfigSpec.ConfigValue<List<? extends String>> MUSIC_WHITELIST;
+    static final ForgeConfigSpec.BooleanValue NOW_PLAYING;
+    static final ForgeConfigSpec.BooleanValue DEBUG_OVERLAY;
+
+    static {
+        var b=new ForgeConfigSpec.Builder();
+        MENU_MUSIC=b.comment("Play the Poris soundtrack on the title screen. Disable to restore vanilla menu music.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.menuMusic")
+                .define("menuMusic",true);
+        IN_GAME_MUSIC=b.comment("Play the Poris soundtrack in worlds, including creative mode and the End credits.",
+                        "Disable to restore vanilla in-game music. Does not change other mods' independent music.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.inGameMusic")
+                .define("inGameMusic",true);
+        FREQUENCY=b.comment("How often background music plays: SPARSE is the vanilla pace (10-20 min between tracks),",
+                        "STANDARD 4-8 min, FREQUENT 1-3 min.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.frequency")
+                .defineEnum("frequency",Frequency.FREQUENT);
+        CONFLICT_MODE=b.comment("NORMAL (default) allows our BGM and external MUSIC or RECORDS to overlap.",
+                        "YIELD fades our music out while external MUSIC or RECORDS are audible.",
+                        "EXCLUSIVE blocks all external MUSIC and RECORDS. WHITELIST allows only the list below.",
+                        "Vanilla note blocks are always allowed.",
+                        "Only applies in scenes where this soundtrack is enabled. Other sound categories are untouched.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.conflictMode")
+                .defineEnum("conflictMode",ConflictMode.NORMAL);
+        MUSIC_WHITELIST=b.comment("External music allowed in WHITELIST mode. We yield while an allowed track plays.",
+                        "Use exact sound event IDs (netmusic:net_music) or a namespace wildcard (cataclysm:*).",
+                        "Ignored in NORMAL, YIELD and EXCLUSIVE modes.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.musicWhitelist")
+                .defineListAllowEmpty(List.of("musicWhitelist"),MusicPolicy.DEFAULT_WHITELIST,MusicPolicy::validEntry);
+        NOW_PLAYING=b.comment("Show a small card with the title in the top-right corner when a new track starts.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.nowPlaying")
+                .define("nowPlaying",true);
+        DEBUG_OVERLAY=b.comment("Show in the top-left corner what the soundtrack is doing and why.")
+                .translation(PorisSoundtrack.MOD_ID+".configuration.debugOverlay")
+                .define("debugOverlay",false);
+        SPEC=b.build();
+    }
+
+    static Frequency frequency() {
+        try{return FREQUENCY.get();}catch(IllegalStateException notLoadedYet){return Frequency.FREQUENT;}
+    }
+
+    static MusicPolicy musicPolicy(boolean enabled) {
+        try{return new MusicPolicy(enabled,MusicPolicy.Mode.valueOf(CONFLICT_MODE.get().name()),List.copyOf(MUSIC_WHITELIST.get()));}
+        catch(IllegalStateException notLoadedYet){return new MusicPolicy(enabled,MusicPolicy.Mode.NORMAL,MusicPolicy.DEFAULT_WHITELIST);}
+    }
+
+    static boolean menuMusic() {
+        try{return MENU_MUSIC.get();}catch(IllegalStateException notLoadedYet){return true;}
+    }
+
+    static boolean inGameMusic() {
+        try{return IN_GAME_MUSIC.get();}catch(IllegalStateException notLoadedYet){return true;}
+    }
+
+    static boolean nowPlaying() {
+        try{return NOW_PLAYING.get();}catch(IllegalStateException notLoadedYet){return true;}
+    }
+
+    static boolean debugOverlay() {
+        try{return DEBUG_OVERLAY.get();}catch(IllegalStateException notLoadedYet){return false;}
+    }
+
+    private SoundtrackConfig(){}
+}

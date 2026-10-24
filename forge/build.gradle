@@ -1,0 +1,49 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev.legacyforge'
+}
+
+group = 'com.poris'
+version = rootProject.version
+def soundtrackVersion = version.toString()
+base { archivesName = 'poris-elegies-shattered-melodies-forge-1.20.1' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(17) }
+repositories { mavenCentral() }
+dependencies {
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+sourceSets.main.java.srcDir '../src/common/java'
+sourceSets.main.resources.srcDirs '../src/main/resources', '../src/generated/resources'
+sourceSets.main.resources.exclude 'poris_elegies_shattered_melodies.mixins.json'
+def workspaceKey = projectDir.absolutePath.digest('SHA-256').take(16)
+tasks.withType(net.neoforged.nfrtgradle.NeoFormRuntimeTask).configureEach {
+    getWorkDirectory().set(new File(gradle.gradleUserHomeDir,"caches/poris-elegies/${workspaceKey}/neoform-work"))
+}
+
+legacyForge {
+    version = '1.20.1-47.2.0'
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run/client')
+        }
+    }
+    mods { poris_elegies_shattered_melodies { sourceSet sourceSets.main } }
+}
+
+mixin {
+    add sourceSets.main, 'poris_elegies_shattered_melodies.refmap.json'
+    config 'poris_elegies_shattered_melodies.forge.mixins.json'
+}
+tasks.named('jar', Jar) {
+    manifest.attributes('MixinConfigs': 'poris_elegies_shattered_melodies.forge.mixins.json')
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.withType(ProcessResources).configureEach { filteringCharset = 'UTF-8' }
+tasks.named('processResources', ProcessResources) {
+    inputs.property('mod_version', soundtrackVersion)
+    filesMatching('META-INF/mods.toml') { expand mod_version: soundtrackVersion }
+    exclude 'PORIS_ELEGIES_SHATTERED_MELODIES_SOURCES.json'
+    from('../LICENSE', '../ASSET_LICENSE.md', '../MUSIC_LICENSE.md', '../MUSIC_CREDITS.md')
+}

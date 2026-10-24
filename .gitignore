@@ -1,0 +1,23 @@
+# Build outputs and local development state
+.gradle/
+**/build/
+**/run/
+.idea/
+.vscode/
+*.iml
+*.log
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+.local/
+.claude/
+.codex/
+
+# Local tests, source recordings and internal records
+**/src/test/
+**/src/smoke/
+**/src/gametest/
+**/DEVELOPMENT_NOTES.md
+**/RELEASE_REVIEW*.md
+**/PORIS_ELEGIES_SHATTERED_MELODIES_SOURCES.json
+*.wav
+*.flac
