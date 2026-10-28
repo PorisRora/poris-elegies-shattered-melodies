@@ -4,7 +4,7 @@ plugins {
 }
 
 // Client-side music mod for Minecraft 1.21 and 1.21.1.
-def soundtrackVersion = '0.1-beta'
+def soundtrackVersion = '0.2.2-beta'
 group = 'com.poris'
 version = soundtrackVersion
 base { archivesName = 'poris-elegies-shattered-melodies-neoforge-1.21-1.21.1' }

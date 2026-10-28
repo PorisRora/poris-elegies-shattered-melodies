@@ -2,8 +2,8 @@
   "_说明": "曲目清单。pools 是各环境候选曲；weights 是每个环境的初始选曲权重，未写默认为 1，当地主题通常为 3。全局最近播放记录会进一步避开上一首、降低近三首概率。创造模式主世界优先使用所在群系事件，普通地区使用 creative 池。poris_elegies_shattered_melodies:underground 是本模组新增的地下场景（主世界头顶到地表至少 12 格、天光为 0，繁茂洞穴、溶洞、深暗之域除外）。空池保持安静。只改曲池时运行 tools/build-soundtrack.py --definitions-only；加曲时用 --import-ost。",
   "tracks": {
     "01_witchsrequiem": {
-      "title_ja": "魔女の鎮魂歌",
-      "title_zh": "魔女的安魂曲",
+      "title_ja": "彼女が遺した世界",
+      "title_zh": "她留下的世界",
       "energy": "walk"
     },
     "01b_herfootprints": {
@@ -32,23 +32,23 @@
       "energy": "walk"
     },
     "04_gardenlabyrinth": {
-      "title_ja": "庭園迷宮の小径",
-      "title_zh": "庭园迷宫的小径",
-      "energy": "still"
+      "title_ja": "木漏れ日の栞",
+      "title_zh": "树影间的书签",
+      "energy": "walk"
     },
     "05_rosegardenwaltz": {
-      "title_ja": "薔薇園のワルツ",
-      "title_zh": "玫瑰园的圆舞曲",
-      "energy": "still"
+      "title_ja": "主なき薔薇のワルツ",
+      "title_zh": "无主蔷薇的圆舞曲",
+      "energy": "walk"
     },
     "06_forestcathedral": {
-      "title_ja": "森の大聖堂",
-      "title_zh": "林中的大教堂",
-      "energy": "still"
+      "title_ja": "星降る樹海の夢",
+      "title_zh": "星落树海之梦",
+      "energy": "walk"
     },
     "07_ivyruins": {
-      "title_ja": "蔦の下に眠る遺跡",
-      "title_zh": "藤蔓下沉睡的遗迹",
+      "title_ja": "蔦に眠る古の頁",
+      "title_zh": "藤下沉睡的旧书页",
       "energy": "walk"
     },
     "08_sunlitterrace": {
@@ -57,14 +57,14 @@
       "energy": "walk"
     },
     "09_bambooteahouse": {
-      "title_ja": "竹林の奥の茶室",
-      "title_zh": "竹林深处的茶室",
-      "energy": "still"
+      "title_ja": "竹露に濡れる月影",
+      "title_zh": "竹露沾湿的月影",
+      "energy": "walk"
     },
     "10_marshteaparty": {
-      "title_ja": "沼の魔女のお茶会",
-      "title_zh": "沼泽魔女的茶会",
-      "energy": "still"
+      "title_ja": "霧のほとり、忘れ水の歌",
+      "title_zh": "雾畔忘川之歌",
+      "energy": "walk"
     },
     "11_mountainwindletter": {
       "title_ja": "山風が君に便りを運ぶ",
@@ -141,19 +141,29 @@
       "title_zh": "魔女的凋零",
       "energy": "full"
     },
+    "24c_ashengrimoire": {
+      "title_ja": "灰に散る魔導書",
+      "title_zh": "散落灰烬的魔导书",
+      "energy": "full"
+    },
     "25_crimsonbanquet": {
-      "title_ja": "緋色の晩餐会",
-      "title_zh": "绯红的晚宴",
+      "title_ja": "紅き森の夜想曲",
+      "title_zh": "绯森夜想曲",
+      "energy": "full"
+    },
+    "25b_crimsonfantasia": {
+      "title_ja": "紅き森の幻想曲",
+      "title_zh": "绯森幻想曲",
       "energy": "full"
     },
     "26_soulrequiem": {
-      "title_ja": "亡魂のレクイエム",
-      "title_zh": "亡魂的安魂曲",
-      "energy": "still"
+      "title_ja": "蒼き炎の鎮魂歌",
+      "title_zh": "苍炎镇魂歌",
+      "energy": "walk"
     },
     "27_basaltinquisition": {
-      "title_ja": "黒岩の審問廷",
-      "title_zh": "黑岩审判庭",
+      "title_ja": "黒曜に立つ審判",
+      "title_zh": "黑曜之审判",
       "energy": "full"
     },
     "28_starseaendgame": {
@@ -292,10 +302,12 @@
     ],
     "minecraft:music.nether.nether_wastes": [
       "24_hellfireelegy",
-      "24b_witchswithering"
+      "24b_witchswithering",
+      "24c_ashengrimoire"
     ],
     "minecraft:music.nether.crimson_forest": [
-      "25_crimsonbanquet"
+      "25_crimsonbanquet",
+      "25b_crimsonfantasia"
     ],
     "minecraft:music.nether.soul_sand_valley": [
       "26_soulrequiem"

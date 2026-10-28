@@ -1,0 +1,9 @@
+中文名称：珀璃丝追忆录：碎镜余音
+English name: Poris Elegies: Shattered Melodies
+
+源码状态：开源 / Open source (MIT)
+权利声明：源码 MIT；音乐、图片和 Logo 为 ARR，使用范围见 ASSET_LICENSE.md 和 MUSIC_LICENSE.md。
+
+中文短介绍：38 首随环境播放的音乐，让破碎的旋律伴你走过森林、洞穴、下界与末地。仅客户端。
+
+English summary: 38 tracks that follow your surroundings, from quiet forests to the Ender Dragon battle. A client-side soundtrack of remembrance.

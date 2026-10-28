@@ -223,10 +223,26 @@
       }
     ]
   },
+  "music.24c_ashengrimoire": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/24c_ashengrimoire",
+        "stream": true
+      }
+    ]
+  },
   "music.25_crimsonbanquet": {
     "sounds": [
       {
         "name": "poris_elegies_shattered_melodies:music/25_crimsonbanquet",
+        "stream": true
+      }
+    ]
+  },
+  "music.25b_crimsonfantasia": {
+    "sounds": [
+      {
+        "name": "poris_elegies_shattered_melodies:music/25b_crimsonfantasia",
         "stream": true
       }
     ]

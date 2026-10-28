@@ -10,13 +10,13 @@ A fractured story. A fractured melody.
 
 After all you've been through, do you still remember her?
 
-**0.1 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **Client-side only**
+**0.2.2 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **Client-side only**
 
-[Download 0.1 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.1-beta)
+[Download 0.2.2 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.2.2-beta)
 
 ## What you'll hear
 
-- **36 tracks** for the main menu, exploration, caves, underwater areas, the Nether and the End.
+- **38 tracks** for the main menu, exploration, caves, underwater areas, the Nether and the End.
 - **Music that follows your surroundings** in both Survival and Creative modes.
 - **Gentle transitions**, with fades, pauses between tracks and rules that reduce immediate repeats.
 - **On-demand playback**: browse the track list, request a song or choose music for your current surroundings.
@@ -30,9 +30,9 @@ Choose the file for your Minecraft version and mod loader:
 
 | Minecraft | Loader | Java | File |
 | --- | --- | --- | --- |
-| **1.21** | NeoForge **21.0.143+**, within the 21.0 branch | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.1-beta.jar` |
+| **1.21** | NeoForge **21.0.143+**, within the 21.0 branch | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.2.2-beta.jar` |
 | **1.21.1** | NeoForge **21.1.1+**, within the 21.1 branch | 21 | The same NeoForge file as above |
-| **1.20.1** | Forge **47.2.0+**, within the 47 branch | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.1-beta.jar` |
+| **1.20.1** | Forge **47.2.0+**, within the 47 branch | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.2.2-beta.jar` |
 
 1. Install the matching mod loader and Java version.
 2. Put **one matching JAR** in your instance's `mods` folder. Do not install the Forge and NeoForge files together.
@@ -90,28 +90,28 @@ Enter these commands in chat after joining a world. They support Tab completion,
 
 ## Full track list
 
-These 36 tracks are included in 0.1 Beta. Request one in-game with `/poris melodies play <number>`, for example `/poris melodies play 02c`.
+These 38 tracks are included in 0.2.2 Beta. Request one in-game with `/poris melodies play <number>`, for example `/poris melodies play 02c`.
 
 <details>
-<summary>Show all 36 tracks</summary>
+<summary>Show all 38 tracks</summary>
 
 Locations indicate where a track can be selected; playback follows the configured intervals and selection rules. Creative mode also follows biome music; “Generic Creative areas” means places without dedicated biome music.
 
 | No. | English title | Original title | Locations |
 | --- | --- | --- | --- |
-| `01` | The Witch's Requiem | 魔女の鎮魂歌 | Main menu |
+| `01` | The World She Left Behind | 彼女が遺した世界 | Main menu |
 | `01b` | Her Footprints | 彼女の足あと | Main menu |
 | `02` | A Walk Along the Star Chart | 星図をたどる散歩道 | General Overworld exploration; Generic Creative areas; Forest; Old growth taiga; Meadow |
 | `02b` | Silver Afternoon | 銀色の午後 | General Overworld exploration; Generic Creative areas; Flower forest; Meadow; Cherry grove |
 | `02c` | The Familiar Road | いつもの道 | General Overworld exploration; Generic Creative areas |
 | `03` | A Castle on a Blank Page | 白紙の頁に城を建てる | Generic Creative areas |
-| `04` | Paths Through the Garden Labyrinth | 庭園迷宮の小径 | Forest; Old growth taiga |
-| `05` | Rose Garden Waltz | 薔薇園のワルツ | Flower forest; Cherry grove |
-| `06` | The Forest Cathedral | 森の大聖堂 | Forest; Old growth taiga; Swamp |
-| `07` | Ruins Sleeping Beneath the Ivy | 蔦の下に眠る遺跡 | Jungle; Sparse jungle; Bamboo jungle |
+| `04` | Bookmark in the Dappled Light | 木漏れ日の栞 | Forest; Old growth taiga |
+| `05` | Waltz of the Unclaimed Rose | 主なき薔薇のワルツ | Flower forest; Cherry grove |
+| `06` | Dream of the Star-Fallen Sea of Trees | 星降る樹海の夢 | Forest; Old growth taiga; Swamp |
+| `07` | Ancient Pages Beneath the Vines | 蔦に眠る古の頁 | Jungle; Sparse jungle; Bamboo jungle |
 | `08` | Sunlit Terrace | 陽だまりのテラス | Jungle; Sparse jungle; Bamboo jungle |
-| `09` | A Teahouse Deep in the Bamboo | 竹林の奥の茶室 | Jungle; Sparse jungle; Bamboo jungle |
-| `10` | The Marsh Witch's Tea Party | 沼の魔女のお茶会 | Swamp |
+| `09` | Moonshade Wet with Bamboo Dew | 竹露に濡れる月影 | Jungle; Sparse jungle; Bamboo jungle |
+| `10` | Song of the Mist and Lethe Water | 霧のほとり、忘れ水の歌 | Swamp |
 | `11` | The Mountain Wind Brings Word of You | 山風が君に便りを運ぶ | General Overworld exploration; Generic Creative areas; Meadow; Jagged peaks; Stony peaks |
 | `12` | Before the Petals Fall | 散りゆく前に | Flower forest; Cherry grove |
 | `13` | Temple in the Sands | 砂の神殿 | Desert; Badlands |
@@ -127,9 +127,11 @@ Locations indicate where a track can be selected; playback follows the configure
 | `23` | The Sunken Ballroom | 海に沈んだ舞踏室 | Underwater music areas |
 | `24` | Hellfire Elegy | 業火の挽歌 | Nether wastes |
 | `24b` | The Witch's Withering | 魔女の凋零 | Nether wastes |
-| `25` | Crimson Banquet | 緋色の晩餐会 | Crimson forest |
-| `26` | Requiem for Departed Souls | 亡魂のレクイエム | Soul sand valley |
-| `27` | The Blackstone Tribunal | 黒岩の審問廷 | Basalt deltas |
+| `24c` | Grimoire Scattered in Ashes | 灰に散る魔導書 | Nether wastes |
+| `25` | Nocturne of the Crimson Woods | 紅き森の夜想曲 | Crimson forest |
+| `25b` | Fantasia of the Crimson Woods | 紅き森の幻想曲 | Crimson forest |
+| `26` | Requiem of the Pale Flame | 蒼き炎の鎮魂歌 | Soul sand valley |
+| `27` | Judgment Upon the Obsidian | 黒曜に立つ審判 | Basalt deltas |
 | `28` | A Chessboard at the Edge of the Star Sea | 星の海の果ての盤面 | End exploration |
 | `29` | Born of the End | Born of the End | Ender Dragon battle |
 | `30` | A Candle's Worth of Courage | 蝋燭一本分の勇気 | Ordinary Overworld underground |
@@ -156,7 +158,7 @@ Install JDK 21 and run from the project root:
 
 On Linux / macOS, use `./gradlew build :forge:reobfJar`. The Gradle Wrapper downloads the pinned Gradle version; toolchain provisioning obtains JDK 17 for Forge when needed. The first build needs internet access.
 
-NeoForge output is in `build/libs/`; Forge output is in `forge/build/libs/`. All 36 game-ready OGG files are included, so no separate audio conversion is needed. See [ASSET_LICENSE.md](ASSET_LICENSE.md) for local build and asset permissions.
+NeoForge output is in `build/libs/`; Forge output is in `forge/build/libs/`. All 38 game-ready OGG files are included, so no separate audio conversion is needed. See [ASSET_LICENSE.md](ASSET_LICENSE.md) for local build and asset permissions.
 
 ## Music permissions and credits
 

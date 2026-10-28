@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/PorisRora/poris-elegies-shattered-melodies/i
 [[mods]]
 modId="poris_elegies_shattered_melodies"
 version="${mod_version}"
-displayName="Poris Elegies: Shattered Melodies"
+displayName="珀璃丝追忆录：碎镜余音 | Poris Elegies: Shattered Melodies"
 displayURL="https://github.com/PorisRora/poris-elegies-shattered-melodies"
 displayTest="IGNORE_SERVER_VERSION"
 logoFile="assets/poris_elegies_shattered_melodies/textures/gui/mod_icon.png"
