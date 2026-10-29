@@ -12,9 +12,9 @@
 
 经历了那么多，你还记得你记忆中的那个她吗？
 
-**0.2.2 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **仅客户端**
+**0.2.3 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **仅客户端**
 
-[下载 0.2.2 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.2.2-beta)
+[下载 0.2.3 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.2.3-beta)
 
 ## 你会听到什么
 
@@ -32,9 +32,9 @@
 
 | Minecraft | 加载器 | Java | 文件 |
 | --- | --- | --- | --- |
-| **1.21** | NeoForge **21.0.143+**（21.0 分支） | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.2.2-beta.jar` |
+| **1.21** | NeoForge **21.0.143+**（21.0 分支） | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.2.3-beta.jar` |
 | **1.21.1** | NeoForge **21.1.1+**（21.1 分支） | 21 | 同上，两个版本共用 NeoForge 包 |
-| **1.20.1** | Forge **47.2.0+**（47 分支） | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.2.2-beta.jar` |
+| **1.20.1** | Forge **47.2.0+**（47 分支） | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.2.3-beta.jar` |
 
 1. 安装上表中与游戏版本匹配的加载器和 Java。
 2. 将对应的 **一个**音乐包 JAR 放进游戏实例的 `mods` 文件夹，NeoForge 包和 Forge 包不要同时安装。
@@ -92,7 +92,7 @@ Forge 版配置页的白名单用英文逗号分隔多个条目；红色表示 I
 
 ## 完整曲目表
 
-0.2.2 Beta 收录以下 38 首曲目。游戏内可用 `/poris melodies play <编号>` 点播，例如 `/poris melodies play 02c`。
+0.2.3 Beta 收录以下 38 首曲目。游戏内可用 `/poris melodies play <编号>` 点播，例如 `/poris melodies play 02c`。
 
 <details>
 <summary>展开全部 38 首曲目</summary>
@@ -149,6 +149,12 @@ Forge 版配置页的白名单用英文逗号分隔多个条目；红色表示 I
 先检查主音量、音乐音量，以及配置里的对应场景开关。曲间等待和让位期间保持安静属于正常行为；用 `/poris melodies now` 可以查看当前原因。
 
 如需反馈异常，请附上 Minecraft、加载器（NeoForge / Forge）和音乐包版本，发生时的场景、共存模式，以及游戏日志 `logs/latest.log`。当前为 Beta，欢迎反馈整合包中的实际表现。
+
+## 模组接入接口
+
+其他模组可在客户端播放音乐前调用 `com.poris.elegies.melodies.MusicControl.acquire(sound)`，取得优先播放权；歌曲结束、取消或离开场景时调用返回对象的 `close()` 释放。声音本身仍由调用方播放和停止。
+
+接口接受任意模组的 `MUSIC` 或 `RECORDS` 声音实例，不限制声音命名空间。未调用接口的外部音乐继续遵循玩家选择的共存模式。
 
 ## 从源码构建
 

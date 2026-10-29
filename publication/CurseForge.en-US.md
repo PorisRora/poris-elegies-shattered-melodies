@@ -22,7 +22,7 @@ It works in both Survival and Creative modes, with fades and pauses between trac
 
 ## Installation
 
-**Current release: 0.2.2 Beta. Client-side only; no server installation is needed.**
+**Current release: 0.2.3 Beta. Client-side only; no server installation is needed.**
 
 | Minecraft | Loader | Java |
 | --- | --- | --- |

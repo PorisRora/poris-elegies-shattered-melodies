@@ -10,9 +10,9 @@ A fractured story. A fractured melody.
 
 After all you've been through, do you still remember her?
 
-**0.2.2 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **Client-side only**
+**0.2.3 Beta** · **NeoForge 1.21 / 1.21.1 · Forge 1.20.1** · **Client-side only**
 
-[Download 0.2.2 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.2.2-beta)
+[Download 0.2.3 Beta](https://github.com/PorisRora/poris-elegies-shattered-melodies/releases/tag/v0.2.3-beta)
 
 ## What you'll hear
 
@@ -30,9 +30,9 @@ Choose the file for your Minecraft version and mod loader:
 
 | Minecraft | Loader | Java | File |
 | --- | --- | --- | --- |
-| **1.21** | NeoForge **21.0.143+**, within the 21.0 branch | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.2.2-beta.jar` |
+| **1.21** | NeoForge **21.0.143+**, within the 21.0 branch | 21 | `poris-elegies-shattered-melodies-neoforge-1.21-1.21.1-0.2.3-beta.jar` |
 | **1.21.1** | NeoForge **21.1.1+**, within the 21.1 branch | 21 | The same NeoForge file as above |
-| **1.20.1** | Forge **47.2.0+**, within the 47 branch | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.2.2-beta.jar` |
+| **1.20.1** | Forge **47.2.0+**, within the 47 branch | 17 | `poris-elegies-shattered-melodies-forge-1.20.1-0.2.3-beta.jar` |
 
 1. Install the matching mod loader and Java version.
 2. Put **one matching JAR** in your instance's `mods` folder. Do not install the Forge and NeoForge files together.
@@ -90,7 +90,7 @@ Enter these commands in chat after joining a world. They support Tab completion,
 
 ## Full track list
 
-These 38 tracks are included in 0.2.2 Beta. Request one in-game with `/poris melodies play <number>`, for example `/poris melodies play 02c`.
+These 38 tracks are included in 0.2.3 Beta. Request one in-game with `/poris melodies play <number>`, for example `/poris melodies play 02c`.
 
 <details>
 <summary>Show all 38 tracks</summary>
@@ -147,6 +147,12 @@ Locations indicate where a track can be selected; playback follows the configure
 Check Master Volume, Music volume and the relevant music toggle in Config. Silence between tracks or while yielding is expected; `/poris melodies now` explains the current state.
 
 For a bug report, include your Minecraft, loader and Shattered Melodies versions, the location and coexistence mode when it happened, and `logs/latest.log`. This is a Beta release; feedback from modpacks is welcome.
+
+## Mod integration API
+
+Before playing a song on the client thread, another mod can call `com.poris.elegies.melodies.MusicControl.acquire(sound)` to reserve music priority. Close the returned lease when the song ends, is cancelled, or leaves its scene. The caller remains responsible for playing and stopping the sound.
+
+The API accepts any mod's `MUSIC` or `RECORDS` sound instance, without restricting its namespace. External music that does not request a lease continues to follow the player's selected coexistence mode.
 
 ## Building from source
 

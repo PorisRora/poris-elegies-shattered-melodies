@@ -1,6 +1,7 @@
-0.2.2-beta
-Poris Elegies: Shattered Melodies | new main menu track | 2026-10-28
+0.2.3-beta
+Poris Elegies: Shattered Melodies | open music coordination API | 2026-10-29
 NeoForge 1.21 / 1.21.1 or Forge 1.20.1 (see the loader-specific JAR filename).
 Independent client-only music mod; 38 tracks. Main menu 01 is now the World She Left Behind (the placeholder retired); 0.2.1-beta: forest 04/05/06/07/09/10 and Nether 25/26/27 replaced, new 25b and 24c.
-The Java API is com.poris.elegies.melodies.MusicControl, unchanged since 0.2-beta.
+The Java API is com.poris.elegies.melodies.MusicControl.acquire(sound) / Lease.close().
+Any mod can reserve a MUSIC or RECORDS instance; the API does not restrict the sound namespace.
 The music mod runs independently and does not require or check a main-mod version.
